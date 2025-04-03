@@ -1,0 +1,127 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Applying the new font */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern, clean font for body */
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* Soft light background for a fresh look */
+    color: #4a4a4a; /* Dark Gray text for optimal readability */
+}
+
+header {
+    background: linear-gradient(135deg, #ff4081, #6a1b9a); /* Gradient from pink to purple for a lively header */
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif; /* Elegant, serif font for header */
+    letter-spacing: 1px; /* Slight letter spacing for a more elegant feel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow to create depth */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase; /* Adds a refined feel with capitalization */
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Luxurious gold hover effect */
+}
+
+section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff8e1; /* Soft pastel yellow, like flower petals */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Gentle shadow to elevate the content */
+    margin: 40px auto;
+    width: 85%;
+}
+
+#home h2 {
+    color: #6a1b9a; /* Deep Purple for headings to give contrast and elegance */
+    font-family: 'Playfair Display', serif; /* Serif font for elegance */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #4a4a4a; /* Soft dark gray for paragraph text */
+    line-height: 1.6;
+}
+
+footer {
+    background: linear-gradient(135deg, #ff4081, #6a1b9a); /* Gradient to match header */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Button-style link for 'Shop Now' or calls-to-action */
+a.cta-btn {
+    display: inline-block;
+    background-color: #ff7043; /* Soft coral, warm and inviting */
+    color: white;
+    text-decoration: none;
+    padding: 18px 40px;
+    border-radius: 50px; /* Rounded edges for a more friendly feel */
+    font-weight: 700; /* Bold and impactful */
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase; /* Gives a more modern, chic look */
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.cta-btn:hover {
+    background-color: #e64a19; /* Darker coral on hover for contrast */
+    transform: scale(1.05); /* Subtle grow effect on hover */
+}
+
+/* Adding some subtle animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section, footer, header {
+    animation: fadeIn 1s ease-out;
+}
