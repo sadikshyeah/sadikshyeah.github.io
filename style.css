@@ -20,3 +20,9 @@ margin:20px;
     margin-left:10px;
     
 }
+.backgroundImage{
+    background-image:url(pinkRoses.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
