@@ -23,6 +23,8 @@ h3 {
 
 p {
     color: #464646;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .subHeader {
@@ -71,6 +73,13 @@ nav ul li {
     justify-self: center;
 }
 
+@media (max-width: 1000px) {
+
+    .content {
+        width: calc(100% - 32px);
+    }
+}
+
 
 footer {
     background-color: #B9D7C1;
@@ -108,6 +117,21 @@ footer {
 .banner .heroText {
     width: 60%;
 }
+
+@media (max-width: 720px) {
+    .banner {
+        height: 420px;
+    }
+
+    .banner .heroHeader {
+        width: 84%;
+    }
+
+    .banner .heroText {
+        width: 84%;
+    }
+}
+
 
 /* Image showcase */
 .showcase-images {
@@ -206,6 +230,8 @@ input {
     .logo {
         margin: 0;
     }
+
+
 }
 
 
