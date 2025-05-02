@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cherry Blossoms</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
             <img class="logo" src="logo.png" alt="Website logo" width="100" height="50">
-            
+
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
                 <ion-icon name="menu-outline"></ion-icon>
             </label>
-            
+
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="flowers.html">Flowers</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -27,29 +30,57 @@
         </nav>
     </header>
     <main>
-        <div class = "banner_img"> 
-         <h1>Bringing you the freshest bloom for every occasion </h1>
-        <div id="backgroundImage">
-            <p>From everyday moments to life’s biggest celebrations, our handcrafted floral arrangements bring beauty, joy, and heartfelt emotions to every occasion</p>
-
-        </div>
-        
-    </div>
-    <p> Our top picks</p>
-    <div class="image-container">
-    <img src = "Images/tulip.jpg" alt = "AI generated image tulip">
-    <img src = "Images/blueberryMixFlower.jpg" alt = "AI generated image">
-    <img src = "Images/roseBouquet.jpg" alt = "AI generated image">
-    <img src = "Images/mixRoses.jpg" alt = "AI generated image">
-</div>
-    </main>
-    <p>What our customers say?</p>
-    <footer>
-        <div class="social-icons">
-            <ion-icon name="logo-facebook"></ion-icon>
-            <ion-icon name="logo-instagram"></ion-icon>
-            <ion-icon name="logo-pinterest"></ion-icon>
+        <div class="banner">
+            <div class="content">
+                <h1 class="heroHeader">Bringing you the freshest bloom for every occasion </h1>
+                <p class="heroText">From everyday moments to life’s biggest celebrations, our handcrafted floral
+                    arrangements bring
+                    beauty, joy, and heartfelt emotions to every occasion</p>
             </div>
+        </div>
+        <div class="content">
+            <div class="showcase-images">
+                <h3> Our top picks</h3>
+                <div class="image-container">
+                    <img class="showcase" src="Images/tulip.jpg" alt="AI generated image tulip">
+                    <img class="showcase" src="Images/blueberryMixFlower.jpg" alt="AI generated image">
+                    <img class="showcase" src="Images/roseBouquet.jpg" alt="AI generated image">
+                </div>
+                <a class="link" href="flowers.html">View more</a>
+            </div>
+
+
+            <h3>What our customers say?</h3>
+
+            <div class="review-container">
+                <div class="review">
+                    <img class="profile-pic" src="Images/tulip.jpg" alt="Profile picture of Hanna K.">
+                    <div>
+                        <p class="highlight">“Gorgeous flowers”</p>
+                        <p class="main-comment">Amazing flowers and customer service</p>
+                        <p class="customer-name">- Hanna K.</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <img class="profile-pic" src="Images/tulip.jpg" alt="Profile picture of Hanna K.">
+                    <div>
+                        <p class="highlight">“Gorgeous flowers”</p>
+                        <p class="main-comment">Amazing flowers and customer service</p>
+                        <p class="customer-name">- Hanna K.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="content">
+            <div class="social-icons">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-pinterest"></ion-icon>
+            </div>
+        </div>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

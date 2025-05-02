@@ -1,19 +1,43 @@
 html,
 body {
     height: 100%;
-    margin: 0;
+    margin: 0px;
 }
 
 body {
     font-family: "Afacad", sans-serif;
     display: flex;
     flex-direction: column;
+}
 
+h1 {
+    font-size: 48px;
+    color: #4D4D4D;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #515151;
 }
 
 p {
-    padding: 3%;
-    padding-left: 3%;
+    color: #464646;
+}
+
+.subHeader {
+    font-size: 24px;
+    color: #464646;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+a:hover {
+    color: #D85ABA;
+    cursor: pointer;
 }
 
 main {
@@ -22,7 +46,7 @@ main {
 
 nav {
     height: 80px;
-    width: 100%;
+    width: 960px;
 
 }
 
@@ -42,15 +66,9 @@ nav ul li {
     margin-left: 10px;
 }
 
-.backgroundImage {
-    background-image: url(pinkRoses.jpg);
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, repeat;
-    padding: 15px;
-}
-
-h1 {
-    color: #D85ABA;
+.content {
+    width: 960px;
+    justify-self: center;
 }
 
 
@@ -60,27 +78,48 @@ footer {
 }
 
 .social-icons {
-    text-align: right;
     padding-right: 50px;
     color: white;
+    display: flex;
+    gap: 10px;
 }
 
-.banner_img {
+.banner {
     background-image: url("images/whiteLilies.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 200px;
+    height: 360px;
     margin: 30px auto;
-    padding: 20px;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: left;
     text-align: left;
+    display: flex;
+    align-items: center;
 }
 
-img {
+.banner .heroHeader {
+    width: 60%;
+    color: #D85ABA;
+}
+
+.banner .heroText {
+    width: 60%;
+}
+
+/* Image showcase */
+.showcase-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase-images a.link {
+    align-self: flex-end;
+}
+
+img.showcase {
     border: 1px solid #dddddd;
     border-radius: 2px;
     padding: 5px;
@@ -96,12 +135,28 @@ img {
     flex-wrap: wrap;
 }
 
+
+/* Navigation style*/
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
+
+nav a {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: #D85ABA;
+}
+
 
 input {
     display: none;
@@ -125,7 +180,7 @@ input {
     order: 3;
 }
 
-/* Responsive styles */
+
 @media (max-width: 600px) {
     .nav-links {
         display: none;
@@ -151,4 +206,30 @@ input {
     .logo {
         margin: 0;
     }
+}
+
+
+/* Customers' reviews section */
+.review-container {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+
+}
+
+.review p.highlight {
+    font-weight: 600;
+    color: black;
+}
+
+img.profile-pic {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
 }
