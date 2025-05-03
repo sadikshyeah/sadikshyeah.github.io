@@ -93,11 +93,9 @@ footer .content {
     justify-content: space-between;
 }
 
-.social-icons {
-    padding-right: 50px;
-    color: white;
-    display: flex;
-    gap: 10px;
+
+.social-icons a {
+    color: black;
 }
 
 .banner {
